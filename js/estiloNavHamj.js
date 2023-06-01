@@ -1,5 +1,3 @@
-console.log("hoal")
-
 const hamb = document.querySelector(".ham");
 const nav = document.querySelector("section.nav ul");
 

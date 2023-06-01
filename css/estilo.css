@@ -83,6 +83,12 @@ header img{
     color: black;
 }
 
+section.nav ul li:hover{
+    color: var(--corporativo);
+    opacity: 0.7;
+
+}
+
 .ham{
     width: 4%;
     display: none;
@@ -121,6 +127,16 @@ div.linea img{
     padding-top: 5px;
     width: 24px;
     height: 24px;
+}
+
+div.linea img:hover{    
+    opacity: 0.8;
+
+    padding-top: 3px;
+    
+    width: 26px;
+    height: 26px;
+
 }
 
 
@@ -185,6 +201,8 @@ section{
 
     font-size: 18px;
 }
+
+
 
 .cajita img{
     width: 18%;
@@ -322,7 +340,7 @@ section{
 
 /* noticias */
 
-.imagenes{
+.segundotodo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -331,7 +349,7 @@ section{
 
 }
 
-.imagenes article{
+div.segundoImagenes article{
     width: 12vw;
 
     font-size: 8px;
@@ -339,7 +357,7 @@ section{
 }
 
 
-.imagenes article img{
+.segundoImagenes article img{
     width: 13vw;
     height: 20vh;
     
@@ -367,7 +385,11 @@ section{
     transform: rotate(-90deg);
 }
 
-
+.segundoImagenes{
+    display: flex;
+    gap: 30px;
+    scroll-snap-type: x mandatory;
+}
 
 
 
@@ -697,11 +719,13 @@ footer{
 }
 
 footer i{
-    font-size: 40px;
+    font-size: 35px;
     color: #000;
 }
 
-
+footer i:hover{
+    color: var(--corporativo);
+}
 
 
 
