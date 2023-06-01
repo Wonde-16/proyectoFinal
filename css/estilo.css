@@ -16,6 +16,7 @@
     --moradoClaro:#CCBCDA;
     --naranja: #fd9051;
     --rojo:#ff4444;
+    --grisOverlay: #9696969a;
 
 }
 
@@ -70,7 +71,7 @@ header img{
     position: fixed;
     z-index: 5;
 
-    margin: 100px 0px;
+    margin: 85px 0px;
     padding-top: 10px;
     padding: 10px 10vw;
 
@@ -83,7 +84,7 @@ header img{
 }
 
 .ham{
-    width: 6%;
+    width: 4%;
     display: none;
 
     margin-top: 20px;
@@ -92,7 +93,7 @@ header img{
 section.nav ul{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 25px;
     list-style: none;
     padding-top: 20px;
 }
@@ -127,6 +128,10 @@ div.linea img{
 
 
 
+section{
+    padding: 3vw 0px;
+}
+
 /* section primero nav */
 
 .primero{
@@ -139,7 +144,7 @@ div.linea img{
     width: 90vw;
     height: 80vh;
 
-    margin-top: 220px;
+    margin-top: 150px;
 }
 
 
@@ -247,7 +252,7 @@ div.linea img{
 }
 
 .numeros{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
@@ -258,17 +263,18 @@ div.linea img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 108vw;
+
 
     
     background-color: #632599;
     color: white;
 
-    padding: 3vh 0px;
 
+    position: relative;
 }
 
-.segundo h1{
+.bordeBlanco{
     padding-bottom: 1vw;
     margin-bottom: 4vw;
     border-bottom: 2px solid white;
@@ -293,41 +299,76 @@ div.linea img{
     width: 60vw;
 }
 
+.contenidoC{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60vw;
+
+}
+
+.contenidoSx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 60vw;
+}
+
+
+
 /* noticias */
 
-.noticias{
+.imagenes{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+
 }
 
-.noticias article{
-    width: 13vw;
+.imagenes article{
+    width: 12vw;
 
     font-size: 8px;
     text-align: center;
 }
 
 
-.noticias article div{
+.imagenes article img{
     width: 13vw;
     height: 20vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     
     margin-bottom: 20px;
 }
 
-.CastoresCabulleria{
-    background-image: url(../img/noticias/castoresCabulleria.jpg);
+.flecha{
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../img/flecha-hacia-abajo-para-navegar.png);
+    background-size: cover;
+
+    position: absolute;
+    top: 58%;
 }
 
-.ManadaMximas{
-    background-image: url(../img/noticias/manadaMaximas.jpg);
+.flechaIzq{
+    left:  15%;
+    transform: rotate(90deg);
 }
+
+.flechaDer{
+    right: 15%;
+    transform: rotate(-90deg);
+}
+
+
+
 
 
 /* section tercera */
@@ -338,7 +379,7 @@ div.linea img{
     align-items: center;
     width: 100vw;
 
-    padding: 3vh 0vh;
+    padding: 4vh 0vh;
 
     position: relative;
 
@@ -350,8 +391,7 @@ div.linea img{
     justify-content: center;
     align-items: center;
 }
-
-.tercero h1.ter{
+h1.borde{
     padding-bottom: 1vw;
     margin-bottom: 4vw;
     border-bottom: 2px solid black;
@@ -417,7 +457,7 @@ div.linea img{
 }
 
 
-.contentenidobx a {
+.contentenidobx div {
     padding: 7px;
     text-decoration: none;
     color: black;
@@ -431,6 +471,202 @@ div.linea img{
     right: 25px;
     bottom: 25px;
 }
+
+/*postAbiertos*/
+
+.overlayPost1, .overlayPost2, .overlayPost3{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 74.5vh;
+    background-color: var(--grisOverlay);
+
+}
+
+.overlayPostAbierto{
+    display: flex;
+}
+
+.postAbierto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 58%;
+    height: 70%;
+
+    background-color: white;
+    position: relative;
+}
+
+.cerrar{
+    position: absolute; 
+    top: 20px;
+    right: 20px;
+
+    font-size: 15px;
+}
+
+
+
+/* cuarta section */
+
+.cuarto{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 40vw;
+
+    background-color: var(--corporativo);
+    color: white;
+
+    
+}
+
+.cuarto h1{
+    color: white;
+}
+
+.contenidoC .textoSP h1{
+    color: var(--moradoClaro);
+}
+
+.cuarto div.textoSP{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 60vw;
+}
+
+.textoPP{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+}
+
+.textoPP img{
+    width: 10vw;
+}
+
+.textoSP h1{
+    color: var(--corporativo);
+}
+
+
+
+
+
+
+
+/* quinta section */
+
+.quinta{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+
+
+    padding: 4vw 0vh;
+}
+
+.movMun{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.movMun div{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.asde{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+
+
+.quinta img{
+    width: 20vw;
+}
+
+
+
+
+
+/* sexto section */
+
+.sexto{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+
+    background-color: var(--corporativo);
+    
+    padding: 4vw 0vh;
+    color: white;
+}
+
+.sexto h1.tituloP3{
+    padding-bottom: 1vw;
+    margin-bottom: 4vw;
+    border-bottom: 2px solid black;
+}
+
+
+.sexto div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sexto .localizacion1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;}
+
+.sexto div div h1{
+    color: var(--moradoClaro);
+} 
+
+
+.sexto .textoP3{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 /*}
 ________________________________________________________
 */
@@ -443,7 +679,6 @@ footer{
     height: 35vh;
     background-color: var(--corporativo );
 
-    position: relative;
 
 }
 
@@ -456,14 +691,19 @@ footer{
     justify-content: center;
     gap: 30px;
 
-    position: absolute;
+    position: fixed;
     left: 70px;
     top: 0px;
 }
 
-.rrss img{
-    width: 20%;
+footer i{
+    font-size: 40px;
+    color: #000;
 }
+
+
+
+
 
 .contacta{
     display: flex;
@@ -525,6 +765,61 @@ footer{
 /*mediaquery*/
 
 @media (max-width: 1300px) {
+    .cuarto{
+        padding-left: 20vw;
+    }
+
+    .contenidoC{
+        width: 80vw;
+    }
+
+    .textoSP{
+        width: 80vw;
+    }
+
+    .textoP3{
+        width: 40vw;
+    }
+
+    .imagenes article{
+        width: 16vw;
+    }
+    
+    
+    .imagenes article img{
+        width: 16vw;
+    }
+    
+    .ham{
+        display: flex;
+    }
+
+    section.nav ul{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--corporativo);
+        color: white;
+
+        position: absolute;
+        top: 70px;
+
+        padding-left: 100px;
+        width: 20%;
+        height: 100vh;
+
+        transition: all ease 01s;
+    }
+    .navegador{
+        
+        left: -1000px;
+    }
+
+    .navegadorHam{
+        
+        left: 0px;
+    }
+
+
     .palabras{
         width: 80vw;
     }
@@ -577,6 +872,12 @@ footer{
 
 
 @media (max-width: 900px) {
+
+    section.nav ul{
+        
+        padding-left: 20px;
+        padding: 20px;
+    }
     .texto{
         font-size: 35px;
     }
@@ -593,14 +894,6 @@ footer{
         font-size: 15px;
     }
 
-    .ham{
-        display: flex;
-    }
-
-    section.nav ul{
-        display: none;
-    }
-
     .noticias article{
         width: 23vw;
     }
@@ -613,7 +906,8 @@ footer{
     }
 }
 
-}
+
+
 
 
 
@@ -627,6 +921,25 @@ footer{
 
 
 @media (max-width: 800px) {
+
+    .textoP3{
+        width: 30vw;
+    }
+
+    .sexto iframe{
+        width: 50%;
+        height: 25vh;
+    }
+
+
+    .imagenes article{
+        width: 31vw;
+    }
+    
+    
+    .imagenes article img{
+        width: 31vw;
+    }
     
     
     .contTarj{
@@ -637,6 +950,16 @@ footer{
 
 
 
-@media (max-width: 900px) {
 
+
+
+
+
+@media (max-width: 600px) {
+    section.nav ul{
+        
+        width: 40%;
+
+        top: 50px;
+    }
 }
