@@ -1,5 +1,13 @@
 const flechaIzq = document.querySelector(".flechaIzq");
-console.log(flechaIzq);
-
 const flechaDer = document.querySelector(".flechaDer");
-console.log(flechaDer);
+const segundoImagenes = document.querySelector(".segundoImagenes");
+
+
+
+flechaIzq.addEventListener("click", function(){
+    segundoImagenes.classList.toggle("posicion1");
+})
+
+flechaDer.addEventListener("click", function(){
+    segundoImagenes.classList.toggle("posicion1");
+})
