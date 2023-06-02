@@ -390,6 +390,7 @@ section{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
     width: 60vw;
 
 }
@@ -510,7 +511,7 @@ div.segundoImagenes article article{
 }
 h1.borde{
     padding-bottom: 1vw;
-    margin-bottom: 4vw;
+    margin-bottom: 3vw;
     border-bottom: 2px solid black;
 }
 
@@ -624,6 +625,18 @@ h1.borde{
     position: relative;
 }
 
+.imgbxAbierto{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imgbxAbierto div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .cerrar{
     position: absolute; 
     top: 20px;
@@ -643,59 +656,109 @@ h1.borde{
 
     padding-left: 40vw;
 
-    background-color: var(--corporativo);
-    color: white;
+    color: black;
 
-    
+    border-top: #000 solid 1px;
+
+    position: relative;
 }
 
 .cuarto h1{
-    color: white;
+    color: black;
 }
 
-.contenidoC .textoSP h1{
-    color: var(--moradoClaro);
-}
 
-.cuarto div.textoSP{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    width: 60vw;
-}
 
 .textoPP{
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 60vw;
+    gap: 30px;
+}
+.textoPP p{
+    width: 40vw;
+    font-size: 18px;
+
+    color: white;
 }
 
 .textoPP img{
-    width: 10vw;
+    width: 20vw;
 }
 
-.textoSP h1{
+.sco, .uni, .rov, .ster{
     color: var(--corporativo);
 }
 
 
 
+.textoSP{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 60vw;
+}
 
+.textoSP div{ 
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+}
+
+
+.cas, .cas h1, .man, .man h1 {
+    color: white;
+}
+
+
+.cuadradoFondo{
+    width: 79vw;
+    height: 40vh;
+
+    opacity: 0.9;
+
+    background-color: var(--corporativo);
+
+    position: absolute;
+    left: 0px;
+    top:30%;
+
+    z-index: -1;
+}
 
 
 
 /* quinta section */
 
 .quinta{
-    width: 60vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
 
+    background-color: var(--corporativo);
+
+    color: var(--blanco);
 
     padding: 4vw 0vh;
+    font-size: 15px;
+}
+
+.contenidoQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 60vw;
+
+}
+
+.quinta h1{
+    color: var(--morado);
 }
 
 .movMun{
@@ -712,11 +775,14 @@ h1.borde{
 
 .asde{
     display: flex;
+    flex-direction: row-reverse;
+    gap:30px;
+}
+.asde div{
+    display: flex;
     flex-direction: column;
     gap:30px;
 }
-
-
 
 .quinta img{
     width: 20vw;
@@ -736,10 +802,9 @@ h1.borde{
     align-items: center;
     gap:40px;
 
-    background-color: var(--corporativo);
     
     padding: 4vw 0vh;
-    color: white;
+    color: black;
 }
 
 .sexto h1.tituloP3{
@@ -776,7 +841,7 @@ h1.borde{
 }
 
 .sexto div div h1{
-    color: var(--moradoClaro);
+    color: var(--corporativo);
 } 
 
 
@@ -790,7 +855,7 @@ h1.borde{
 
 .sexto iframe{
     width: 50vw;
-    height: 35vh;
+    height: 28vh;
 }
 
 
@@ -887,7 +952,7 @@ footer i:hover{
 
 .footerFinal{
     width: 100vw;
-    height: 10vh;
+    height: 10px;
     background-color: var(--corporativo2)
 }
 
