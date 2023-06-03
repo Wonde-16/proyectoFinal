@@ -21,7 +21,7 @@ window.addEventListener("scroll",function(){
 })
 
 
-window.addEventListener("unload",function(){
+window.addEventListener("onload",function(){
     const  sectionPrimera  =document.querySelector(".primero");
     let al1 = sectionPrimera.getBoundingClientRect();
 
