@@ -228,9 +228,9 @@ section{
     padding: 4vw 0px;
 }
 
-/* section primero nav */
+/* section parte1  */
 
-.primero{
+.parte1{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,7 +245,7 @@ section{
 
 
 
-/* section primero contenido */
+/* section parte1 contenido */
 
 .texto{
 
@@ -401,9 +401,9 @@ section{
 
 
 
-/* AFECTA SECTION ImagenesB */
+/* AFECTA SECTION parte2 */
 
-.ImagenesB{
+.parte2{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -554,7 +554,7 @@ section{
 
 /* section tercera */
 
-.tercero{
+.parte3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -566,7 +566,7 @@ section{
 
 }
 
-.tercero div.contenido{
+.parte3 div.contenido{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -659,7 +659,7 @@ h1.borde{
     display: none;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 99.5vw;
     height: 73vh;
     background-color: var(--grisOverlay);
 
@@ -713,12 +713,13 @@ h1.borde{
 
 /* cuarta section */
 
-.cuarto{
+.parte4{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    padding-left: 40vw;
 
     color: black;
 
@@ -727,7 +728,7 @@ h1.borde{
     position: relative;
 }
 
-.cuarto h1{
+.parte4 h1{
     color: black;
 }
 
@@ -776,7 +777,7 @@ h1.borde{
 
 
 .cuadradoFondo{
-    width: 79vw;
+    width: 59vw;
     height: 30vh;
 
     opacity: 0.9;
@@ -794,7 +795,7 @@ h1.borde{
 
 /* quinta section */
 
-.quinta{
+.parte5{
     width: 99vw;
     display: flex;
     flex-direction: column;
@@ -818,7 +819,7 @@ h1.borde{
 
 }
 
-.quinta h1{
+.parte5 h1{
     color: var(--morado);
 }
 
@@ -849,7 +850,7 @@ h1.borde{
     gap:30px;
 }
 
-.quinta img{
+.parte5 img{
     width: 20vw;
     height: 25vh;
 }
@@ -860,7 +861,7 @@ h1.borde{
 
 /* sexto section */
 
-.sexto{
+.parte6{
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -873,7 +874,7 @@ h1.borde{
     color: black;
 }
 
-.sexto h1.tituloP3{
+.parte6 h1.tituloP3{
     padding-bottom: 1vw;
     margin-bottom: 4vw;
     border-bottom: 2px solid black;
@@ -882,7 +883,7 @@ h1.borde{
 
 
 
-.sexto .localizacion1{
+.parte6 .localizacion1{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -906,12 +907,12 @@ h1.borde{
     padding-left: 60px;
 }
 
-.sexto div div h1{
+.parte6 div div h1{
     color: var(--corporativo);
 } 
 
 
-.sexto .textoP3{
+.parte6 .textoP3{
     display: flex;
     flex-direction: column;
     gap:30px;
@@ -919,7 +920,7 @@ h1.borde{
     text-align: center;
 }
 
-.sexto iframe{
+.parte6 iframe{
     width: 50vw;
     height: 28vh;
 }
