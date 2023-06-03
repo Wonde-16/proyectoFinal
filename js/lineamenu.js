@@ -151,5 +151,7 @@ window.addEventListener("scroll",function(){
         part[5].style.borderBottom = "0px";
         part[6].style.borderBottom = "0px";
         part[7].style.borderBottom = "2px solid #632599";
+        
+        
     }
 });

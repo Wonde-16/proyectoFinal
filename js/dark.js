@@ -6,6 +6,7 @@ const nav = document.querySelector(".nav");
 
 modoOscuro.addEventListener("click", function (){
     console.log("hola")
+    nav.classList.toggle("navClaro");
     nav.classList.toggle("navDark");
     sol.classList.toggle("solOcultado");
     sol.classList.toggle("solAbierto");
