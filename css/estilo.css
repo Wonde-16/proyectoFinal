@@ -1337,6 +1337,24 @@ ________________________________________________________
         width: 5.5vw;
         height: 25vh;
     }
+
+    .postAbierto{
+        
+        width: 90%;
+        height: 95%;
+    }
+
+    .imgbxAbierto {
+        flex-direction: column-reverse;
+    }
+
+    .imgbxAbierto div{
+        width: 100%;
+    }
+
+    .imgbxAbierto img{
+        width: 100%;
+    }
 }
 
 
