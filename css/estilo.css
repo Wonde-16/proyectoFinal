@@ -1375,7 +1375,11 @@ ________________________________________________________
     }
 
     .rrss{
-        left: 35px;
+        left: 15px;
+    }
+
+    .fondoRRSS i{
+        font-size: 25px;
     }
     .fondoRRSS{
         
