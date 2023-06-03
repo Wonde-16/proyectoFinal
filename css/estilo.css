@@ -40,6 +40,12 @@ body{
 .bodyDark{
     background-color: #b1b1b1;
 }
+
+
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
 /* header */
 
 header{
@@ -58,11 +64,18 @@ header{
 
 
 header img{
-    padding: 0px 8.5vw;
+    padding: 0px 9vw;
+
+    height: 60%;
+}
+
+
+header a{
+    display: flex;
+    align-items: center;
 
     height: 90%;
 }
-
 
 .modoOscuro{
     display: flex;
@@ -116,7 +129,7 @@ header img{
 
 /* navegador  nav */
 
-.nav{
+nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -150,7 +163,7 @@ header img{
     background-color: #b1b1b1;
 }
 
-section.nav ul li:hover{
+nav ul li:hover{
     color: var(--corporativo);
     opacity: 0.7;
 
@@ -163,7 +176,7 @@ section.nav ul li:hover{
     margin-top: 20px;
 }
 
-section.nav ul{
+nav ul{
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -212,7 +225,7 @@ div.linea img:hover{
 
 
 section{
-    padding: 3vw 0px;
+    padding: 4vw 0px;
 }
 
 /* section primero nav */
@@ -227,7 +240,7 @@ section{
     width: 90vw;
     height: 80vh;
 
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 
@@ -396,8 +409,9 @@ section{
     justify-content: center;
     align-items: center;
 
-    height: 90vh;
     width: 99vw;
+    
+    padding: 4vw 0vh;
 
     background-color: var(--corporativo);
 
@@ -771,7 +785,7 @@ h1.borde{
 
     position: absolute;
     left: 0px;
-    top:24%;
+    top:25%;
 
     z-index: -1;
 }
@@ -1029,7 +1043,7 @@ footer h2,footer h3 ,footer p{
 
 .footerFinal{
     width: 99vw;
-    height: 10px;
+    height: 70px;
     background-color: var(--corporativo2)
 }
 
