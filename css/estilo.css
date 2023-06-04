@@ -570,6 +570,16 @@ section{
     margin-top: 20px;
 }
 
+.tarjeta1{
+    margin-top: 60px;
+    color: var(--blanco);
+    position: relative;
+    overflow-y: hidden;
+    width:30%;
+    height: 20vh;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
+}
 
 
 
@@ -1226,15 +1236,10 @@ ________________________________________________________
         
         left: -1000px;
     }
-
-   
-
     .navegadorHam{
         
         left: 0px;
     }
-
-
     .palabras{
         width: 80vw;
     }
@@ -1600,7 +1605,4 @@ ________________________________________________________
         
         padding: 20px;
     }
-
-    
-    
 }

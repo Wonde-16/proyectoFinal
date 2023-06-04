@@ -1,10 +1,11 @@
-var cajas =document.querySelectorAll(".tarjeta");
+var cajas =document.querySelectorAll(".tarjeta1");
 var todas = document.querySelector(".todas");
 var castores = document.querySelector(".castores");
 var manada = document.querySelector(".manada");
 var scout = document.querySelector(".scout");
 var unidad = document.querySelector(".unidad");
 var rover = document.querySelector(".rover");
+var grupo = document.querySelector(".grupo");
 
 
 
@@ -83,4 +84,16 @@ rover.addEventListener("click", function(){
     }) 
 })
 
+grupo.addEventListener("click", function(){
+
+    cajas.forEach(caja => {
+   
+        if(caja.getAttribute("data-filter") == "grupo"){
+            caja.style.display="inline-flex"
+        }
+        else{
+            caja.style.display="none" 
+        }
+    }) 
+})
 
