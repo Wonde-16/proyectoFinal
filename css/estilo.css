@@ -231,7 +231,7 @@ div.linea img:hover{
 
 
 section{
-    padding: 4vw 0px;
+    padding: 3vw 0px;
 }
 
 /* section parte1  */
@@ -974,10 +974,10 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
     background-color: var(--corporativo );
 
-
+    
+    padding: 3vw 0px;
 }
 
 
@@ -1489,7 +1489,7 @@ ________________________________________________________
     }
 
     nav{
-        margin-top: 80px 0px 0px 0px;
+        margin: 75px 0px ;
     }
     .fondoRRSS{
         
@@ -1587,7 +1587,7 @@ ________________________________________________________
     }
 
     .rrss{
-        left: 15px;
+        left: unset;
     }
 
     .fondoRRSS i{
@@ -1595,11 +1595,10 @@ ________________________________________________________
     }
     .fondoRRSS{
         
-        width: 5.5vw;
-        height: 25vh;
-
+        width: 52.5vw;
+        height: 2vh;
         
-    padding: 20px;
+        padding: 20px;
     }
 
     
