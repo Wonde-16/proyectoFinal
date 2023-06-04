@@ -1,7 +1,10 @@
-var cajas =document.querySelectorAll(".tarjeta")
-var todas = document.querySelector(".todas")
-var zonaScout = document.querySelector(".zonaScout")
-var salidas = document.querySelector(".salidas")
+var cajas =document.querySelectorAll(".tarjeta");
+var todas = document.querySelector(".todas");
+var castores = document.querySelector(".castores");
+var manada = document.querySelector(".manada");
+var scout = document.querySelector(".scout");
+var unidad = document.querySelector(".unidad");
+var rover = document.querySelector(".rover");
 
 
 
@@ -13,12 +16,11 @@ todas.addEventListener("click", function(){
     }) 
 })
 
-zonaScout.addEventListener("click", function(){
-    console.log("hola");
+castores.addEventListener("click", function(){
 
     cajas.forEach(caja => {
    
-        if(caja.getAttribute("data-filter") == "zonaScout"){
+        if(caja.getAttribute("data-filter") == "castores"){
             caja.style.display="inline-flex"
         }
         else{
@@ -27,11 +29,11 @@ zonaScout.addEventListener("click", function(){
     }) 
 })
 
-salidas.addEventListener("click", function(){
+manada.addEventListener("click", function(){
 
     cajas.forEach(caja => {
    
-        if(caja.getAttribute("data-filter") == "salidas"){
+        if(caja.getAttribute("data-filter") == "manada"){
             caja.style.display="inline-flex"
         }
         else{
@@ -39,4 +41,46 @@ salidas.addEventListener("click", function(){
         }
     }) 
 })
+
+scout.addEventListener("click", function(){
+
+    cajas.forEach(caja => {
+   
+        if(caja.getAttribute("data-filter") == "scout"){
+            caja.style.display="inline-flex"
+        }
+        else{
+            caja.style.display="none" 
+        }
+    }) 
+})
+
+unidad.addEventListener("click", function(){
+
+    cajas.forEach(caja => {
+   
+        if(caja.getAttribute("data-filter") == "unidad"){
+            caja.style.display="inline-flex"
+        }
+        else{
+            caja.style.display="none" 
+        }
+    }) 
+})
+
+
+
+rover.addEventListener("click", function(){
+
+    cajas.forEach(caja => {
+   
+        if(caja.getAttribute("data-filter") == "rover"){
+            caja.style.display="inline-flex"
+        }
+        else{
+            caja.style.display="none" 
+        }
+    }) 
+})
+
 
