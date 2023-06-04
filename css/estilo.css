@@ -158,6 +158,7 @@ nav{
     color: black;
 
     transition: all 0.7s ease;
+    background-color: var(--grisClaroFondo);
 
 }
 
@@ -206,7 +207,6 @@ nav ul{
     width: 20%;
     height: 30px;
     
-    border-bottom: var(--negro) solid 2px;
 }
 
 div.linea img{
@@ -225,6 +225,36 @@ div.linea img:hover{
 
 }
 
+.buscador{
+    position: absolute;
+    z-index: -3;
+    right: 0px;
+    width: 30vw;
+    height: 53px;
+    background-color: var(--grisClaroFondo);
+    padding-left: 20px;
+    padding-top: 20px;
+    transition: all 0.7s ease;
+}
+.buscadorAbierto{
+    
+    top: 58px;
+}
+
+.buscadorCerrado{
+    
+    top:-500px;
+}
+
+.texto-busqueda{
+    width: 50%;
+    background-color: transparent;
+    font-size:20px;
+    border: 0px;
+    color: white;
+    border-bottom: var(--corporativo) solid 2px;
+
+}
 
 /*_____________________________________________________________________________________________________________________________________________*/
 
@@ -1001,6 +1031,7 @@ footer{
 
     
     padding: 3vw 0px;
+    padding-bottom: 150px;
 }
 
 
@@ -1199,6 +1230,10 @@ ________________________________________________________
 
 @media (max-width: 1300px) {
 
+    ul a li{
+        color: var(--blanco);
+    }
+
     .parte5 img{
         
         width: 30vw;
@@ -1260,6 +1295,7 @@ ________________________________________________________
         left: -1000px;
     }
     .navegadorHam{
+        padding-left: 30px;
         
         left: 0px;
     }
@@ -1414,7 +1450,9 @@ ________________________________________________________
     .parteImagenes div.tarjeta{
         height: 28vh;
     }
-    
+    .buscador{
+        width: 50vw;
+    }
     
 }
 
