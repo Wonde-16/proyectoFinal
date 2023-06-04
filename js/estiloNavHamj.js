@@ -1,5 +1,5 @@
 const hamb = document.querySelector(".ham");
-const nav = document.querySelector("section.nav ul");
+const nav = document.querySelector("nav ul");
 
 
 hamb.addEventListener("click", function(){
