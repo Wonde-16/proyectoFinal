@@ -1024,7 +1024,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 35%;
+    width: 40%;
     height: 120%;
 }
 
@@ -1033,7 +1033,7 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 55%;
+    width: 65%;
     height: 120%;
 }
 
@@ -1087,7 +1087,9 @@ footer h2,footer h3 ,footer p{
     text-decoration: none;
 }
 
-.footer div.contacto
+.footer div.contacto h3{
+    color: var(--blanco);
+}
 
 
 
