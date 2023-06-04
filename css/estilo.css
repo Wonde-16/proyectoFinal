@@ -1263,12 +1263,12 @@ ________________________________________________________
         display: none;
     }
     .contentenidobx{
-        height: 16vh;
+        height: 24vh;
     }
 
     .imgbx {
         width: 81%;
-        height: 14vh;
+        height: 21vh;
     }
     .noticias{
         gap:48px;
@@ -1384,7 +1384,7 @@ ________________________________________________________
         width: 50%;
     }
     .parteImagenes div.tarjeta{
-        height: 18vh;
+        height: 28vh;
     }
     
     
