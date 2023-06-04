@@ -606,6 +606,10 @@ h1.borde{
 }
 
 .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     margin-top: 60px ;
 
@@ -1059,11 +1063,6 @@ footer h2,footer h3 ,footer p{
 
 
 
-.footerFinal{
-    width: 100vw;
-    height: 70px;
-    background-color: var(--corporativo2)
-}
 
 
 
@@ -1140,7 +1139,17 @@ ________________________________________________________
     height: 26vh;
     top: 23%;
     }
-}
+    .parteImagenes div.tarjeta{
+        height: 21vh;
+        min-width: 300px;
+    }
+    .parteImagenes{
+        justify-content: center;
+    }
+    .contTarj{
+        justify-content: center;
+    }
+    
 
 @media (max-width: 1500px) {
     .cuadradoFondo{
@@ -1170,7 +1179,7 @@ ________________________________________________________
         width: 90vw;
     }
     .contenidoSx{
-        width: 90vw;
+        width: 100vw;
 
     }
 
@@ -1371,7 +1380,10 @@ ________________________________________________________
         
         width: 50%;
     }
-
+    .parteImagenes div.tarjeta{
+        height: 18vh;
+    }
+    
     
 }
 
@@ -1414,6 +1426,7 @@ ________________________________________________________
     .contTarj{
         flex-direction: column;
     }
+    
 }
 
 
@@ -1453,7 +1466,10 @@ ________________________________________________________
         
         width: 90vw;
         height: 30vh;
-        top: 22%;
+        top: 30%;
+    }
+    .textoPP video{
+        width: 48vw;
     }
 }
 
@@ -1472,13 +1488,9 @@ ________________________________________________________
     nav{
         margin-top: 90px 0px 0px 0px;
     }
-    .rrss{
-        left: 25px;
-    }
     .fondoRRSS{
         
-        width: 5.5vw;
-        height: 25vh;
+        width: 63.5vw;
     }
 
     .postAbierto{
@@ -1502,6 +1514,30 @@ ________________________________________________________
     .parte5 img{
         
         width: 80%;
+    }
+
+    .parte6 .localizacion1, .localizacion2{
+        flex-direction: column;
+
+        width: 100%;
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .cont{
+        flex-direction: column;
+    }
+    .tex, .tex1 {
+        width: 100%;
+    }
+    .textoP3{
+        width: 90%;
+    }
+    .cuadradoFondo{
+        display: none;
+    }
+    .textoPP p{
+        width: 90%;
+        color: var(--negro);
     }
 
     
