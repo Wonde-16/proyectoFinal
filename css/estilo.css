@@ -147,7 +147,7 @@ nav{
     position: fixed;
     z-index: 5;
 
-    margin: 85px 0px;
+    margin: 99px 0px;
     padding-top: 10px;
     padding: 10px 10vw;
 
@@ -462,6 +462,9 @@ section{
 .parteImagenes{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 25px;
     flex-wrap: wrap;
     position: relative;
@@ -576,7 +579,8 @@ section{
     position: relative;
     overflow-y: hidden;
     width:30%;
-    height: 20vh;
+    min-width: 300px;
+    height: 25vh;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
 }
@@ -688,13 +692,16 @@ h1.borde{
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 2;
     display: none;
     justify-content: center;
     align-items: center;
-    width: 99.5vw;
-    height: 73vh;
     background-color: var(--grisOverlay);
+
+    
+    width: 100VW;
+    height: 100VH;
+    Z-INDEX: 5;
+    position: fixed;
 
 }
 
@@ -740,6 +747,8 @@ h1.borde{
     right: 20px;
 
     font-size: 15px;
+
+    cursor: pointer;
 }
 
 
@@ -1459,6 +1468,13 @@ ________________________________________________________
         height: 26vh;
         top: 11%;
     }
+
+    .nav{
+        width: 90vw;
+    }
+    .ham{
+        width: 7%;
+    }
 }
 
 
@@ -1493,9 +1509,6 @@ ________________________________________________________
         top: 50px;
     }
 
-    nav{
-        margin: 75px 0px ;
-    }
     .fondoRRSS{
         
         width: 63.5vw;
@@ -1604,5 +1617,8 @@ ________________________________________________________
         height: 2vh;
         
         padding: 20px;
+    }
+    .ham{
+        width: 11%;
     }
 }
