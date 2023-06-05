@@ -63,7 +63,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: var(--corporativo);
 
@@ -74,7 +74,7 @@ header{
 
 
 
-header img{
+.logo{
     padding: 0px 9vw;
 
     height: 80%;
@@ -1648,8 +1648,13 @@ ________________________________________________________
         justify-content: center;
         align-items: center;
     }
+    .logo{
+        padding: 0px 9vw;
+    
+        height: 80%;
+    }
 
-    .header, nav{
+    header{
         height: 80px;
     }
     nav{
@@ -1657,9 +1662,6 @@ ________________________________________________________
 
     }
 
-    header img{
-        height: 39%;
-    }
     .modoOscuro{
         width: 40px;
         height: 20px;
@@ -1669,9 +1671,6 @@ ________________________________________________________
     }
     .imgbxAbierto div p{
         font-size: 13px;
-    }
-    header img{
-        height: 60%;
     }
 
     .sol, .luna{
