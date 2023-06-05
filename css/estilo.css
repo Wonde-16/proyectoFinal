@@ -730,7 +730,7 @@ section{
 
 .overlayPost1, .overlayPost2, .overlayPost3{
     position: absolute;
-    top: 0px;
+    top: unset;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -1347,7 +1347,7 @@ ________________________________________________________
     }
     .overlayPost1, .overlayPost2, .overlayPost3{
         width: 100VW;
-        height: 100VH;
+        height: 96VH;
         Z-INDEX: 5;
         position: fixed;
     }
@@ -1666,6 +1666,12 @@ ________________________________________________________
 
         
     padding: 5px 15px;
+    }
+    .imgbxAbierto div p{
+        font-size: 13px;
+    }
+    header img{
+        height: 60%;
     }
 
     .sol, .luna{
