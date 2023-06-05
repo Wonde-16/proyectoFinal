@@ -53,9 +53,13 @@ body{
 }
 
 
-a{
+a li{
     text-decoration: none;
     color: var(--negro);
+}
+a {
+    text-decoration: none;
+    color: var(--blanco);
 }
 /* header */
 
