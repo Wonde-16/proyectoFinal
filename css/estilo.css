@@ -3,6 +3,7 @@
 :root{
     --blanco: #ffffff;
     --corporativo: #632599;
+    --moradoFonfo:#7527BB;
     --corporativo2: #401664;
     --grisClaroFondo:#F1F1F1;
     --grisClaro:#dbdbdb;
@@ -30,6 +31,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+img{
+    object-fit: cover;
 }
 
 
@@ -396,11 +401,19 @@ section{
 }
 
 
-/* borde blanco */
+/* borde  */
 .bordeBlanco{
+    color: var(--blanco);
     padding-bottom: 1vw;
     margin-bottom: 3vw;
     border-bottom: 2px solid white;
+}
+
+.borde{
+    color:var(--negro);
+    padding-bottom: 1vw;
+    margin-bottom: 3vw;
+    border-bottom: 2px solid black;
 }
 
 
@@ -643,11 +656,6 @@ section{
     justify-content: center;
     align-items: center;
 }
-h1.borde{
-    padding-bottom: 1vw;
-    margin-bottom: 3vw;
-    border-bottom: 2px solid black;
-}
 
 /* tarjeta */
 
@@ -826,7 +834,7 @@ h1.borde{
 }
 
 .textoPP video{
-    width: 25vw;
+    width: 14vw;
 }
 
 .cas, .cas h1, .man, .man h1 ,.sco, .uni, .rov, .ster{
@@ -854,16 +862,16 @@ h1.borde{
 
 
 .cuadradoFondo{
-    width: 59vw;
-    height: 30vh;
+    width: 65vw;
+    height: 24vh;
 
     opacity: 0.9;
 
-    background-color: var(--corporativo);
+    background-color: var(--moradoFonfo);
 
     position: absolute;
     left: 0px;
-    top:25%;
+    top:24%;
 
     z-index: -1;
 }
@@ -1203,7 +1211,7 @@ ________________________________________________________
 @media (max-width: 1800px) {
     .cuadradoFondo{
         
-    height: 26vh;
+    height: 22vh;
     top: 23%;
     }
     .parteImagenes div.tarjeta{
@@ -1221,7 +1229,7 @@ ________________________________________________________
 @media (max-width: 1500px) {
     .cuadradoFondo{
         
-    height: 23vh;
+    height: 18vh;
     top: 22%;
     }
 }
@@ -1358,8 +1366,8 @@ ________________________________________________________
         width: 90vw;
     }
     .cuadradoFondo{
-        width: 65vw;
-        top: 23%;
+        width: 68vw;
+        top: 22%;
     }
 
     .rrss{
@@ -1383,7 +1391,7 @@ ________________________________________________________
 
 @media (max-width: 1200px) {
     .cuadradoFondo{
-        height: 25vh;
+        height: 20vh;
         top: 18%;
     }
 }
