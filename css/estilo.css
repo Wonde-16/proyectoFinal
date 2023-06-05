@@ -837,9 +837,6 @@ section{
     width: 14vw;
 }
 
-.cas, .cas h1, .man, .man h1 ,.sco, .uni, .rov, .ster{
-    color: var(--negro);
-}
 
 
 
@@ -859,6 +856,9 @@ section{
 }
 
 
+.textoSP div h1{ 
+    color: var(--corporativo);
+}
 
 
 .cuadradoFondo{
@@ -1566,7 +1566,7 @@ ________________________________________________________
         
         width: 40%;
 
-        top: 72px;
+        top: 80px;
     }
 
     .fondoRRSS{
@@ -1649,6 +1649,14 @@ ________________________________________________________
         align-items: center;
     }
 
+    .header, nav{
+        height: 80px;
+    }
+    nav{
+        height: 60px;
+
+    }
+
     header img{
         height: 39%;
     }
@@ -1679,6 +1687,6 @@ ________________________________________________________
         padding: 20px;
     }
     .ham{
-        width: 11%;
+        width: 8%;
     }
 }
