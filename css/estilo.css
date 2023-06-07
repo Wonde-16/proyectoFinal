@@ -269,9 +269,6 @@ div.linea img:hover{
 
 
 
-section{
-    padding: 3vw 0px;
-}
 
 /* section parte1  */
 
@@ -324,6 +321,13 @@ section{
     border-radius: 15px;
 
     font-size: 18px;
+}
+
+
+.cajita:hover{
+    font-size: 19px;
+
+    padding: 10px 28px 10px 28px;
 }
 
 .cajitadark{
@@ -429,6 +433,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     width: 60vw;
+    padding: 3vw 0px;
 }
 
 
@@ -440,6 +445,7 @@ section{
     flex-wrap: wrap;
     gap: 30px;
     width: 60vw;
+    padding: 3vw 0px;
 
 }
 
@@ -450,6 +456,7 @@ section{
     gap: 30px;
     flex-wrap: wrap;
     width: 60vw;
+    padding: 3vw 0px;
 }
 
 
@@ -470,7 +477,6 @@ section{
 
     width: 100vw;
     
-    padding: 4vw 0vh;
 
     background-color: var(--corporativo);
 
@@ -486,6 +492,8 @@ section{
     width: 60vw;
 
     color: var(--blanco);
+
+    padding: 3vw 0px;
 
 }
 
@@ -648,7 +656,6 @@ section{
     align-items: center;
     width: 100vw;
 
-    padding: 4vh 0vh;
 
     position: relative;
 
@@ -680,12 +687,50 @@ section{
 
 }
 
-.imgbx {
+.imgbx1 {
     width: 80.5%;
     height: 20vh;
 
-    background-image: url(../img/noticias/castoresCabulleria.jpg);
+    background-image: url(../img/cast.jpeg);
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+
+
+    border-right: 2.5px solid grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.imgbx2 {
+    width: 80.5%;
+    height: 20vh;
+
+    background-image: url(../img/noticias/manadaMaximas.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+
+
+    border-right: 2.5px solid grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.imgbx3 {
+    width: 80.5%;
+    height: 20vh;
+
+    background-image: url(../img/uni2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     object-fit: cover;
     object-position: center;
 
@@ -832,7 +877,7 @@ section{
 }
 .textoPP p{
     width: 50vw;
-    font-size: 18px;
+    font-size: 15px;
 
     color: white;
 }
@@ -894,7 +939,6 @@ section{
 
     color: var(--blanco);
 
-    padding: 4vw 0vh;
     font-size: 15px;
 }
 
@@ -905,6 +949,8 @@ section{
     flex-wrap: wrap;
     gap: 30px;
     width: 60vw;
+
+    padding: 3vw 0px;
 
 }
 
@@ -959,7 +1005,6 @@ section{
     gap:40px;
 
     
-    padding: 4vw 0vh;
     color: black;
 }
 
@@ -1042,7 +1087,6 @@ footer{
     background-color: var(--corporativo );
 
     
-    padding: 3vw 0px;
     padding-bottom: 100px;
 }
 
@@ -1054,6 +1098,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 3vw 0px;
 }
 
 .cont{
@@ -1128,6 +1173,12 @@ footer h2,footer h3 ,footer p{
     
     padding: 7px 10px;
     text-decoration: none;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer div.contacto h3{
@@ -1395,14 +1446,14 @@ ________________________________________________________
 
 @media (max-width: 1200px) {
     .cuadradoFondo{
-        height: 20vh;
+        height: 19vh;
         top: 18%;
     }
 }
 
 @media (max-width: 1000px) {
     .cuadradoFondo{
-        height: 22vh;
+        height: 19vh;
         top: 16%;
     }
 }
@@ -1447,7 +1498,7 @@ ________________________________________________________
         gap:10px;
     }
     .cuadradoFondo{
-        height: 25vh;
+        height: 20vh;
         top: 14%;
     }
 
@@ -1520,17 +1571,12 @@ ________________________________________________________
 
     .cuadradoFondo{
         
-    height: 40vh;
-    top: 9%;
+        height: 23vh;
+        top: 9%;
     }
     .fondoRRSS{
         
         width: 39.5vw;
-    }
-    .cuadradoFondo{
-        
-        height: 26vh;
-        top: 11%;
     }
 
     .nav{
@@ -1553,8 +1599,8 @@ ________________________________________________________
     .cuadradoFondo{
         
         width: 90vw;
-        height: 30vh;
-        top: 30%;
+        height: 25vh;
+        top: 32%;
     }
     .textoPP video{
         width: 48vw;
